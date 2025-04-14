@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SacRady</title>
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">SacRady</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://www.linkedin.com/pulse/topics/it-services-s57547/information-technology-s4725/">Technology</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://developer.ibm.com/technologies/web-development/articles/">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./feedback.html">Feedback</a></li>
+                            <li><a class="dropdown-item" href="./join_us.html">Join Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign-Up</button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login To SacRady</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Get an SacRady Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./1.jpg" class="d-block w-100" alt="Error">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to SacRady</h5>
+                    <p>Technology News, Development and Trending News Topics</p>
+                    <button type="button" class="btn btn-primary">Jobs Updates</button>
+                    <button type="button" class="btn btn-danger">IT Industry News</button>
+                    <button type="button" class="btn btn-success">Technology Topics</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./2.jpg" class="d-block w-100" alt="Error">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The Best Coding Blog</h5>
+                    <p>Technology News, Development and Trends</p>
+                    <button type="button" class="btn btn-primary">Jobs Updates</button>
+                    <button type="button" class="btn btn-danger">IT Industry News</button>
+                    <button type="button" class="btn btn-success">Technology Topics</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./3.jpg" class="d-block w-100" alt="Error">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Innovative IT Blog</h5>
+                    <p>Technology News, Development and Trends</p>
+                    <button type="button" class="btn btn-primary">Jobs Updates</button>
+                    <button type="button" class="btn btn-danger">IT Industry News</button>
+                    <button type="button" class="btn btn-success">Technology Topics</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Job</strong>
+                        <h3 class="mb-0">TCS Walk In Drive Off Campus.</h3>
+                        <div class="mb-1 text-body-secondary">Feb 26</div>
+                        <p class="card-text mb-auto">TCS recently conducted a Walk-In Drive Off Campus, offering
+                            aspiring candidates a chance to showcase their skills and join one of the leading IT
+                            companies globally. </p>
+                        <a href="./trending.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./about-1.jpg" width="300" height="350" alt="Error">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Job</strong>
+                        <h3 class="mb-0">Infoskills Hiring Frontend developer.</h3>
+                        <div class="mb-1 text-body-secondary">Feb 26</div>
+                        <p class="mb-auto">Infoskills is currently on the lookout for a talented Frontend Developer to
+                            join their team. The company's focus on hiring skilled professionals underscores its
+                            commitment to delivering high-quality solutions, making it an exciting opportunity for
+                            individuals. </p>
+                        <a href="./trending.html" class="icon-link gap-1 icon-link-hover stretched-link">
+
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./about-2.jpg" width="300" height="350" alt="Error">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">Interview</strong>
+                        <h3 class="mb-0">Zoho Question Paper leaked.</h3>
+                        <div class="mb-1 text-body-secondary">Feb 22</div>
+                        <p class="card-text mb-auto">The recent leak of ZOHO's question paper has sent ripples through
+                            the tech industry, raising concerns about the company's recruitment process and data
+                            security. As ZOHO navigates this unexpected challenge, questions arise about the potential
+                            impact on its reputation.</p>
+                        <a href="./trending.html" class="icon-link gap-1 icon-link-hover stretched-link">
+
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./about-3.jpg" width="300" height="350" alt="Error">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Hiring</strong>
+                        <h3 class="mb-0">IMC Hiring Graduate Software Engineer.</h3>
+                        <div class="mb-1 text-body-secondary">Feb 20</div>
+                        <p class="mb-auto">IMC, a leading company in the tech industry, is currently on the lookout for
+                            Graduate Software Engineers. This exciting opportunity highlights IMC's commitment to
+                            fostering young talent and maintaining its position at the forefront of innovation.</p>
+                        <a href="./trending.html" class="icon-link gap-1 icon-link-hover stretched-link">
+
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./thumb1.jpg" width="300" height="350" alt="Error">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2020–2024 SacRady, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
